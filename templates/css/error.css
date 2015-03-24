@@ -1,0 +1,47 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background: #333;
+	font-family: 'robotolight';
+	font-weight: normal;
+	text-align: center;
+}
+
+a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 200px;
+	letter-spacing: -10px;
+}
+
+h2 { font-size: 50px; }
+
+h3 { font-size: 15px; }
+
+.error {
+	position: relative;
+	margin: 0 auto;
+	top:50px;
+	text-align: center;
+}
+
+.error p:first-line {
+	font-weight: 700;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	left: 0;
+	bottom:0;
+}

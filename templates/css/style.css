@@ -1,0 +1,125 @@
+html {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+/**
+* Remove default margin.
+*/
+
+body {
+	color: #000;
+	font: normal 16px/1.5em 'robotoregular',sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container-wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/**
+
+//** YOUR CODE HERE
+
+**/
+
+
+/* ARTICLES */
+
+.article-info-term { display: none; }
+
+.article-info dd { display: inline; }
+
+/*CONTACT FORM*/
+.contact-form,
+.contact-form fieldset {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+	height: 30px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	width: 100%;
+	padding: 8px;
+}
+
+.form-actions {
+	border:none;
+	background: none;
+	text-align: center;
+}
+
+/* FORM LOGIN*/
+
+.login {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.login fieldset,
+.remember {
+	max-width: 350px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+	display: block;
+	margin: 0 auto;
+	padding: 8px;
+	width: 95%;
+	min-height: 30px;
+	margin-bottom: 10px;
+}
+
+.login .controls input[type="checkbox"] {
+	float: left;
+	margin: 8px 10px;
+}
+
+.form-horizontal .controls { margin-left: 0; }
+
+.login .well {
+	background: none;
+	border: none;
+}
+
+.align-left { text-align: left; }
+
+.remember ul {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style: none;
+}
+
+.remember ul li{
+	display: inline;
+}
+
+ul.nav.nav-tabs.nav-stacked li a {
+	font-size: 12px;
+}
+
+/*EDITOR*/
+#jform_title {
+	display: block;
+	width: 100%;
+	min-height: 40px;
+	font-size: 20px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
