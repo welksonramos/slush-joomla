@@ -1,0 +1,301 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; 
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+body,
+html { background: #f5f4f1; }
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 300 18px/1.8em 'Roboto', 'Open Sans', sans-serif;
+}
+
+.bg-header {
+	width: 100%;
+	position: fixed;
+	padding: 20px 0;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: #252b43;
+	border-top: 4px solid #3d4a91;
+}
+
+header .brand {
+	font-size: 40px;
+	color:#f7f7f7;
+	padding: 10px 0;
+	line-height: 64px;
+}
+
+header .brand::before {
+	content: '';
+	display: block;
+	float: left;
+	position: relative;
+	width: 45px;
+	height: 64px;
+	margin-right: 20px;
+	background: url(../img/slush-joomla.png) no-repeat;
+}
+
+.container {
+	width: 100%;
+
+}
+
+.container-wrap {
+	width: 1080px;
+	margin: 0 auto;
+	/*background: #ccc*/
+}
+
+.banner {
+	margin-top: 100px;
+	padding: 50px 0;
+	max-height: 350px;
+	background: #252B43
+}
+
+.banner h2 {
+	color: #fff;
+	font-size:60px;
+	line-height: 150%;
+	text-align: center;
+}
+
+.console {
+	position: relative;
+	top: 30px;
+	padding: 30px 80px;
+}
+
+.console b {
+	line-height: 1.2;
+	display: inline;
+	margin-bottom: 20px;
+	width: 200px;
+	text-align: left;
+}
+
+.console b::after {
+	  -webkit-animation: cursor-blink 0.8s linear infinite;
+  -moz-animation: cursor-blink 0.8s linear infinite;
+  -o-animation: cursor-blink 0.8s linear infinite;
+  animation: cursor-blink 0.8s linear infinite;
+	content: '|';
+	position: relative;
+	color: #f7f7f7;
+	padding-left: 5px;
+}
+
+.console,
+section pre {
+	max-width: 960px;
+	margin: 10px auto;
+	display: block;
+	border-radius: 5px;
+	box-shadow:  0 0 3px rgba(0, 0, 0, 0.3);
+	background: #111;
+}
+
+section.getting h2::before {
+	content: '';
+	display: block;
+	position: relative;
+	width: 153px;
+	height: 218px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background: url(../img/slush-joomla-getting.png) no-repeat center center;
+}
+.console code,
+section pre {
+	line-height: 120%;
+}
+
+.console pre,
+.console code,
+section pre,
+section code {
+	color: #f7f7f7;
+	font-size: 40px;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: no-break;
+	-moz-tab-size: 2;
+	-moz-hyphens:none;
+}
+
+section pre,
+section code {
+	font-size: 30px;
+	padding: 40px;
+}
+
+section {
+	padding: 40px 0;
+
+}
+
+section h2 {
+	color: #2e3a5d;
+	font-size:60px;
+	padding: 40px;
+	text-align: center;
+}
+
+section h3 {
+	color: #848383;
+	font-size:40px;
+	padding: 30px 0;
+	text-align: center;
+
+}
+
+footer {
+	width: 100%;
+	padding: 10px 0;
+	position: relative;
+	background: #252b43;
+}
+
+footer p,
+footer a {
+	color: #fff;
+	font-size: 12px
+}
+
+.github-hibbon {
+	position: fixed;
+	display: block;
+	border: 0;
+	z-index: 101;
+	background-color: #121621;
+	top: 3.2em;
+	right: -3.7em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-box-shadow: 0 0 0 1px #000 inset, 0 0 2px 1px #000 inset, 0 0 1em #000;
+	-moz-box-shadow: 0 0 0 1px #000 inset, 0 0 2px 1px #000 inset, 0 0 1em #000;
+	-ms-box-shadow: 0 0 0 1px #000 inset, 0 0 2px 1px #000 inset, 0 0 1em #000;
+	-o-box-shadow: 0 0 0 1px #000 inset, 0 0 2px 1px #000 inset, 0 0 1em #000;
+	box-shadow: 0 0 0 1px #000 inset, 0 0 2px 1px #000 inset, 0 0 1em #000;
+	color: rgba(255, 255, 255, 0.9);
+	padding: .6em 3.5em;
+	font: bold .82em sans-serif;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px -1px 8px rgba(0, 0, 0, 0.6);
+	opacity: 0.8;
+}
+
+.github-hibbon:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.github-hibbon a {
+	color: #fff;
+	text-decoration: none;
+}
+
+@-moz-keyframes cursor-blink {
+  1% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cursor-blink {
+  1% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes cursor-blink {
+  1% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cursor-blink {
+  1% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
