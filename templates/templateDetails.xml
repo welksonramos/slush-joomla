@@ -3,7 +3,9 @@
 <extension version="3.3" type="template" client="site">
 	<name><%= projectName %></name>
 	<version><%= projectVersion %></version>
-	<creationDate><%= creationDate %></authorEmail>
+	<creationDate><%= creationDate %></creationDate>
+	<author><%= authorName %></author>
+	<authorEmail><%= authorEmail %></authorEmail>
 	<copyright>Copyright.</copyright>
 	<description><%= projectDescription %></description>
 	<files>
