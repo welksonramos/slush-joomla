@@ -15,7 +15,7 @@ JHtmlBootstrap::loadCss(false, $this->direction);
 // Add Stylesheet.
 $this->addStyleSheet('media/jui/css/icomoon.css');
 $this->addStyleSheet('media/jui/css/bootstrap.min.css');
-$doc->addStyleSheet('templates/' . $this->template . '/css/style.min.css');
+$doc->addStyleSheet('templates/' . $this->template . '/css/style.css');
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">

@@ -47,4 +47,18 @@ function modChrome_well($module, &$params, &$attribs)
 		echo "</div>";
 	}
 }
+
+function modChrome_bootstrap($module, &$params, &$attribs)
+{
+	if ($module->content)
+	{
+		echo "<div class=\"moduletable" . htmlspecialchars($params->get('moduleclass_sfx')) . " span".htmlspecialchars($params->get('bootstrap_size'))."\">";
+		if ($module->showtitle)
+		{
+			echo "<h3><span>" . $module->title . "</span></h3>";
+		}
+		echo $module->content;
+		echo "</div>";
+	}
+}
 ?>
