@@ -1,4 +1,4 @@
-# slush-joomla
+# slush-joomla [![npm version](https://img.shields.io/npm/v/slush-joomla.svg)](https://www.npmjs.com/package/slush-joomla) [![depstatus](https://img.shields.io/david/welksonramos/slush-joomla.svg)](https://david-dm.org/welksonramos/slush-joomla) [![license](https://img.shields.io/npm/l/slush-joomla.svg?style=flat)](https://raw.github.com/welksonramos/slush-joomla/blob/master/LICENSE)
 
 > A simple slush generator for Joomla templates
 
