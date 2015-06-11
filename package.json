@@ -1,6 +1,6 @@
 {
   "name": "slush-joomla",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A simple slush generator for Joomla templates",
   "main": "slushfile.js",
   "repository": {
@@ -19,12 +19,12 @@
     "template"
   ],
   "dependencies": {
-    "gulp": "^3.8.11",
-    "gulp-conflict": "^0.3.0",
+    "gulp": "^3.9.0",
+    "gulp-conflict": "^0.4.0",
     "gulp-install": "^0.4.0",
     "gulp-template": "^3.0.0",
     "iniparser": "^1.0.5",
-    "inquirer": "^0.8.2"
+    "inquirer": "^0.8.5"
   },
   "author": "Welkson Ramos <welksonr@hotmail.com>",
   "license": {

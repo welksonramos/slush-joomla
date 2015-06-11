@@ -14,7 +14,7 @@
  inquirer = require('inquirer');
 
  function format(string){
- 	var username = string.toLowerCase();
+ 	var username = string ? string.toLowerCase() : '';
  	return username.replace(/\s/g, '');
  }
 
