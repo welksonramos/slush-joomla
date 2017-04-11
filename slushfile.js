@@ -2,7 +2,7 @@
  * slush-joomla
  * https://github.com/welksonramos/slush-joomla
  *
- * Copyright (c) 2015, Welkson Ramos
+ * Copyright (c) 2015-2017, Welkson Ramos
  * Licensed under the MIT license.
  */
 
@@ -13,7 +13,7 @@
  template = require('gulp-template'),
  inquirer = require('inquirer');
 
- function format(string){
+ function format(string) {
  	var username = string ? string.toLowerCase() : '';
  	return username.replace(/\s/g, '');
  }
