@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: normal 400 1em/1.5 'Roboto', sans-serif;
+	background: rgba(255,255,255, .89);
+	color: rgba(0,0,0, .8)
+}
+pre {
+	overflow: auto;
+}
+
+h2 {
+	color: rgba(30,60,114,.92);
+	font-size:3rem;
+	font-weight: 400;
+	padding: 30px 0;
+}
+
+h3 {
+	font-size:1.8rem;
+	padding: 20px 0;
+	font-weight: 400;
+}
+
+p,
+a {
+	font-size: .8rem;
+	text-align: center;
+}
+
+a {
+	color: rgba(0,0,0, .8);
+	text-decoration:underline;
+}
+
+.header {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 60vh;
+	background: linear-gradient(to right, rgba(30, 60, 114,1) 30%, rgba(42, 82, 152,1) 130%);
+}
+.header h1 {
+	font-size: 4.5rem;
+	text-shadow: 0 5px 0 rgba(0,0,0,.5);
+}
+
+.header h2 {
+	color:#fff;
+	font-size: 1.6rem;
+	text-shadow: 0 5px 0 rgba(0,0,0,.5);
+}
+
+.install-package {
+	color: #fff;
+	font-size: 1.3rem;
+	margin: 30px 0 0;
+	padding: 8px 20px;
+	border: 2px dashed rgba(255,255,255, .88);
+}
+.code {
+	font-size: 1.3rem;
+	color: rgba(0,0,0,.8);
+	width: 100%;
+	max-width: 550px;
+	padding: 15px 25px;
+	border-left: 4px solid rgba(30,60,114, .91);
+	background: rgba(224, 225, 226, .35)
+}
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 15px auto;
+	padding: 40px 0;
+	text-align: left
+}
+
+.footer {
+	width: 100%;
+	padding: 10px 0;
+	position: relative;
+}
+
+
