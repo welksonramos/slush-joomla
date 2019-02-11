@@ -1,19 +1,21 @@
 {
   "name": "slush-joomla",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "A simple slush generator for Joomla templates",
   "main": "slushfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/welksonramos/slush-joomla.git"
+    "url": "git+https://github.com/welksonramos/slush-joomla.git"
   },
   "bugs": {
     "url": "https://github.com/welksonramos/slush-joomla/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:tag": "git tag $npm_package_version && git push --tags"
   },
   "keywords": [
+    "slush",
     "slushgenerator",
     "joomla",
     "template"
@@ -26,6 +28,10 @@
     "iniparser": "^1.0.5",
     "inquirer": "^6.2.2"
   },
-  "author": "Welkson Ramos <welksonr@hotmail.com>",
-  "license": "MIT"
+  "author": {
+    "name": "Welkson Ramos",
+    "email": "welksonr@hotmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/welksonramos/slush-joomla#readme"
 }
