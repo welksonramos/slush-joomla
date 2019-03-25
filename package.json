@@ -26,7 +26,8 @@
     "gulp-install": "^1.1.0",
     "gulp-template": "^5.0.0",
     "iniparser": "^1.0.5",
-    "inquirer": "^6.2.2"
+    "inquirer": "^6.2.2",
+    "ora": "^3.2.0"
   },
   "author": {
     "name": "Welkson Ramos",

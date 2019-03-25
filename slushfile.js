@@ -13,6 +13,7 @@ const install = require('gulp-install');
 const conflict = require('gulp-conflict');
 const template = require('gulp-template');
 const inquirer = require('inquirer');
+const ora = require('ora');
 
 const format = (string) => {
 	let username = string ? string.toLowerCase() : '';
@@ -49,6 +50,8 @@ gulp.task('default', function (done) {
 	];
 
 	inquirer.prompt(prompts).then(answers => {
+		const spinner = ora('Generating files...').start();
+
 		if (!answers.moveon) {
 			return done();
 		}
@@ -60,6 +63,7 @@ gulp.task('default', function (done) {
 			.pipe(install())
 			.on('finish', function () {
 				done();
+				spinner.succeed();
 			})
 			.resume();
 	});
