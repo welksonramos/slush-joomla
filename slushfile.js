@@ -37,13 +37,23 @@ const defaults = (() => {
 	};
 })();
 
+const currentDateFormated = () => {
+	const date = new Date(),
+		day = date.getDate().toString(),
+		dayFormated = (day.length == 1) ? '0' + day : day,
+		month = (date.getMonth() + 1).toString(),
+		monthFormated = (month.length == 1) ? '0' + month : month,
+		yearFormated = date.getFullYear();
+	return yearFormated + '-' + monthFormated + '-' + dayFormated;
+}
+
 gulp.task('default', function (done) {
 
 	let prompts = [
 		{ type: 'input', name: 'projectName', message: 'Project name', default: defaults.templateName },
 		{ type: 'input', name: 'projectDescription', message: 'Description' },
 		{ type: 'input', name: 'projectVersion', message: 'Version', default: '1.0.0' },
-		{ type: 'input', name: 'creationDate', message: 'Creation Date' },
+		{ type: 'input', name: 'creationDate', message: 'Creation Date', default: currentDateFormated },
 		{ type: 'input', name: 'authorName', message: 'Author Name', default: defaults.username },
 		{ type: 'input', name: 'authorEmail', message: 'Author E-mail', default: defaults.authorEmail },
 		{ type: 'confirm', name: 'moveon', message: 'Continue?' }
