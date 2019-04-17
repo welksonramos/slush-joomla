@@ -2,6 +2,8 @@
 
 > A simple slush generator for Joomla templates
 
+![demo](demo.gif)
+
 ## Getting Started
 
 Install `slush-joomla` globally:
