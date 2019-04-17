@@ -1,6 +1,6 @@
 {
   "name": "slush-joomla",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A simple slush generator for Joomla templates",
   "main": "slushfile.js",
   "repository": {
